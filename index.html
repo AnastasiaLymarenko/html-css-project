@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
@@ -13,33 +14,33 @@
           <img src="./img/logo.svg" alt="Логотип Сучасої пекарні" />
         </a>
         <ul>
-          <li><a href="#traditions-section">Наші традиції</a></li>
-          <li><a href="#chefs-section">Шеф-кухарі</a></li>
-          <li><a href="#formats-section">Формати</a></li>
-          <li><a href="#contacts-section">Контакти</a></li>
+          <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+          <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a class="link" href="#formats-section">Формати</a></li>
+          <li><a class="link" href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
-      <button type="button">Замовити дзвінок</button>
+      <button class="button" type="button">Замовити дзвінок</button>
     </header>
     <main>
       <section>
-        <h1>Сучасна пекарня</h1>
+        <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
       </section>
       <section id="traditions-section">
-        <ul>
+        <ul class="advantages-list">
           <li>Великий попит ринку</li>
           <li>Доступні за бюджетом формати</li>
           <li>Досвідчена управлінська команда</li>
         </ul>
-        <h2>Новий формат традиції</h2>
+        <h2 class="section-title">Новий формат традиції</h2>
         <p lang="en">
-          <span lang="en">lorem ipsum</span> dolor sit amet consectetur
+          <span class="p-accent">lorem ipsum</span> dolor sit amet consectetur
           adipisicing elit.
         </p>
         <p lang="en">
-          >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
           facere quibusdam dicta deleniti, minima eaque inventore eum amet,
-          <span lang="en">voluptatem, neque ut in at quam</span>. Rerum
+          <span class="p-accent">voluptatem, neque ut in at quam</span>. Rerum
           inventore maiores nam porro earum suscipit illum beatae.
         </p>
         <img
@@ -48,7 +49,9 @@
         />
       </section>
       <section id="chefs-section">
-        <h2>Наші найкращі шеф-кухарі!</h2>
+        <h2 class="section-title">
+          Наші найкращі <span class="accent">шеф-кухарі</span>
+        </h2>
         <ul>
           <li>
             <article>
@@ -79,7 +82,7 @@
         </ul>
       </section>
       <section id="formats-section">
-        <h2>Формати</h2>
+        <h2 class="section-title">Формати</h2>
         <ul>
           <li>
             <article>
@@ -99,7 +102,8 @@
         </ul>
       </section>
       <section id="contacts-section">
-        <h2>Приєднуйтеся до мережі пекарень</h2>
+        <h2 class="section-title">Приєднуйтеся до мережі пекарень</h2>
+        <button class="button" type="button">Замовити дзвінок</button>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.256704104725!2d30.503279799999994!3d50.45494430000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce674262f9bf%3A0x62f81d77b722978a!2sSichovykh%20Striltsiv%20St%2C%205%2C%20Kyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1699814762467!5m2!1sen!2sua"
           width="603"
@@ -116,20 +120,26 @@
           <img src="./img/logo.svg" alt="Логотип Сучасої пекарні" />
         </a>
         <ul>
-          <li><a href="#traditions-section">Наші традиції</a></li>
-          <li><a href="#chefs-section">Шеф-кухарі</a></li>
-          <li><a href="#formats-section">Формати</a></li>
-          <li><a href="#contacts-section">Контакти</a></li>
+          <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+          <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+          <li><a class="link" href="#formats-section">Формати</a></li>
+          <li><a class="link" href="#contacts-section">Контакти</a></li>
         </ul>
       </nav>
       <address>
-        <ul>
-          <li><a href="tel:+380112233445">+380-112-233-445</a></li>
+        <ul class="contacts">
+          <li><a class="link" href="tel:+380112233445">+380-112-233-445</a></li>
           <li>
-            <a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a>
+            <a class="link" href="mailto:shopbakery@gmail.com"
+              >shopbakery@gmail.com</a
+            >
           </li>
           <li>
-            <a href="https://maps.app.goo.gl/iCuXyhm4fTyFMAZC8" target="_blank">
+            <a
+              class="link"
+              href="https://maps.app.goo.gl/iCuXyhm4fTyFMAZC8"
+              target="_blank"
+            >
               Україна, м.Київ, вул.Січових Стрільців 5
             </a>
           </li>
@@ -142,7 +152,7 @@
             <!-- IG icon -->
           </li>
         </ul>
-        <a href="#">Політика конфідеційності</a>
+        <a class="link" href="#">Політика конфідеційності</a>
         <p>&copy;2023. Дані захищенні</p>
       </address>
     </footer>
