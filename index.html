@@ -58,7 +58,7 @@
               <p class="traditions-text">
                 <span class="brand uppercase">shop bakery</span> - це пекарня,
                 яка взяла все найкраще, і зберегла смак традиційної випічки та
-                натуральність інгрідієнтівю
+                натуральність інгрідієнтів.
               </p>
               <p class="traditions-text limited">
                 Ми працюємо як найвідоміші мережі -
@@ -325,7 +325,7 @@
         <button class="modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <form name="modal-form" autocomplete="off" novalidate>
+        <form name="modal-form" autocomplete="off">
           <div class="form-field">
             <label class="form-label visually-hidden" for="user-name"
               >Ім'я</label
@@ -336,6 +336,9 @@
               name="user-name"
               id="user-name"
               placeholder="Ім'я"
+              minlength="2"
+              maxlength="20"
+              required
             />
           </div>
 
@@ -349,6 +352,8 @@
               name="user-tel"
               id="user-tel"
               placeholder="Телефон"
+              pattern="^\+380[0-9]{9}"
+              required
             />
           </div>
 
@@ -362,6 +367,7 @@
               name="user-email"
               id="user-email"
               placeholder="Електронна пошта"
+              required
             />
           </div>
 

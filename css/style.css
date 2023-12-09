@@ -117,6 +117,12 @@ a {
   background-color: transparent;
   color: var(--color-brand-dark-green);
 }
+.button:disabled {
+  background-color: lightgray;
+  color: var(--color-brand-dark-green);
+  border-color: currentColor;
+  cursor: not-allowed;
+}
 
 /* Link */
 .link {
