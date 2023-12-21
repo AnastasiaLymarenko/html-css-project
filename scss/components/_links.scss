@@ -7,3 +7,16 @@
 .link:hover {
     color: var(--color-brand-normal);
 }
+
+.mobile-menu {
+    &__link {
+        color: var(--color-primary-black);
+        text-decoration: none;
+        margin-bottom: 20px;
+        transition: color 0.3s;
+            &:hover {
+                color: var(--color-brand-normal);
+                font-weight: 700;
+            }
+    }
+}

@@ -11,13 +11,12 @@
     fill: var(--color-primary-black);
     border: 1px solid var(--color-primary-black);
     cursor: pointer;
+        &:hover {
+            background-color: var(--color-primary-black);
+            fill: var(--color-primary-white);
+        }
+        &.next {
+         transform: rotate(180deg);
+     }
 }
 
-.carousel-button:hover {
-    background-color: var(--color-primary-black);
-    fill: var(--color-primary-white);
-}
-
-.carousel-button.next {
-    transform: rotate(180deg);
-}

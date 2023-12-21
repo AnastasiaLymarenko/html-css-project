@@ -2,7 +2,13 @@
     padding-bottom: 96px;
     &__container {
             display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+        @media screen and (min-width: $bp-desktop) {
+            flex-direction: row;
             gap: 32px;
+            }
         }
         &__title {
             margin-bottom: 16px;
@@ -14,6 +20,13 @@
             flex-shrink: 0;
             border: none;
             border-radius: 16px;
+            height: 176px;
+            margin: 0 -24px;
+            
+            @media screen and (min-width: $bp-desktop) {
+                width: 603px;
+                height: 595px;
+            }
         }
         &__button {
             display: block;

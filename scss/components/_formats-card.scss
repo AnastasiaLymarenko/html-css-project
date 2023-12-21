@@ -10,10 +10,7 @@
             rgba(49, 38, 26, 0.71) 72.92%,
             var(--color-primary-black) 100%);
     border-radius: 16px;
-    transition: transform 0.3s;
-    &:hover {
-            transform: scale(1.05);
-        }
+    overflow: hidden;
     &__title {
             font-size: 24px;
             font-weight: 600;
